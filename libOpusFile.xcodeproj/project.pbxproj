@@ -114,8 +114,6 @@
 		C497CF0B2133ADE400D7F7CF /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
 		C497CF0C2133ADE400D7F7CF /* wincerts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wincerts.c; sourceTree = "<group>"; };
 		C497CF0D2133ADE400D7F7CF /* stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
-		C497CF2B2133AE3E00D7F7CF /* libOpusIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libOpusIOS.h; sourceTree = "<group>"; };
-		C497CF2C2133AE3E00D7F7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 				C497CF032133ADE400D7F7CF /* src */,
 				C497CDB52133A52B00D7F7CF /* libOpusFile */,
 				C497CDF22133A66C00D7F7CF /* libOpusFileIOS */,
-				C497CF2A2133AE3E00D7F7CF /* libOpusIOS */,
 				C497CDB42133A52B00D7F7CF /* Products */,
 				C497D2DF2133B52900D7F7CF /* Frameworks */,
 			);
@@ -222,15 +219,6 @@
 				C497CF0D2133ADE400D7F7CF /* stream.c */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		C497CF2A2133AE3E00D7F7CF /* libOpusIOS */ = {
-			isa = PBXGroup;
-			children = (
-				C497CF2B2133AE3E00D7F7CF /* libOpusIOS.h */,
-				C497CF2C2133AE3E00D7F7CF /* Info.plist */,
-			);
-			path = libOpusIOS;
 			sourceTree = "<group>";
 		};
 		C497D2DF2133B52900D7F7CF /* Frameworks */ = {
@@ -594,6 +582,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.libOpusFile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -622,6 +611,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.libOpusFile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -649,6 +639,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.libOpusFileIOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
@@ -678,6 +669,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.libOpusFileIOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
